@@ -3,11 +3,11 @@ A simple Twitter snowflake generator implemented in Golang.
 
 snowflake format:
 ```
-//
-// |   symbol   |  timestamp  |  worker id  |     seq     |
-// |------------|-------------|-------------|-------------|
-// |<-- 1bit -->|<-- 41bit -->|<-- 10bit -->|<-- 12bit -->|
-//
++------------------------------------------------------+
+|   symbol   |  timestamp  |  worker id  |     seq     |
+|------------|-------------|-------------|-------------|
+|<-- 1bit -->|<-- 41bit -->|<-- 10bit -->|<-- 12bit -->|
++------------------------------------------------------+
 ```
 
 * The ID as a whole is an int64.
